@@ -1,8 +1,50 @@
 [
-  
+  {
+    "id": "clinica-tervo",
+    "num": "001",
+    "title": "App Clínica Tervo",
+    "desc": "Aplicativo para clínica da Tervo Software, com demonstração pública disponível.",
+    "tags": [
+      "Vue 3",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "SQLAlchemy"
+    ],
+    "features": [
+      "Cadastro de pacientes com histórico de atendimentos",
+      "Agenda por profissional com validação de conflitos de horário e registro de presença ou falta",
+      "Prontuário com evolução clínica, questionários, termos de consentimento e fotos",
+      "Controle de estoque com baixa dos insumos usados em cada atendimento",
+      "Gestão financeira de receitas, despesas e contas em aberto, com visão de valores previstos e realizados",
+      "Painel com indicadores diários de pacientes, agendamentos, receita e faltas"
+    ],
+    "demo": "https://democlinica.tervosoftware.com.br/"
+  },
+  {
+    "id": "gestao-loja",
+    "num": "002",
+    "title": "App Gestão de Loja",
+    "desc": "Aplicativo de gestão de loja da Tervo Software, com demonstração pública disponível.",
+    "tags": [
+      "Vue 3",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "SQLModel"
+    ],
+    "features": [
+      "Catálogo de roupas organizado por modelos, tamanhos e cores",
+      "Controle de estoque dos produtos cadastrados",
+      "Registro de vendas e acompanhamento pelo painel administrativo",
+      "Dashboard com indicadores para acompanhar a operação da loja",
+      "Financeiro mensal com controle de gastos fixos e variáveis"
+    ],
+    "demo": "http://demogestao.tervosoftware.com.br/"
+  },
   {
     "id": "portfolio",
-    "num": "001",
+    "num": "003",
     "title": "Portfólio",
     "desc": "Portfólio “Onyx” em HTML/CSS/JS puro, com tokens de design, modal de projetos e animações leves por IntersectionObserver. A meta é performance e controle criativo sem dependências.",
     "tags": [
@@ -24,7 +66,7 @@
   },
  {
   "id": "taskflow",
-  "num": "002",
+  "num": "004",
   "title": "TaskFlow",
   "desc": "Sistema fullstack para gerenciamento de tarefas e projetos com regras de produtividade embutidas. Além do CRUD, impõe limites inteligentes (tarefas ativas, prioridades e bloqueios por atraso), garantindo controle real de carga de trabalho e não só organização superficial. Composto por API REST, frontend web e app desktop.",
   "tags": [
@@ -63,7 +105,7 @@
   },
   {
     "id": "agenda-digital",
-    "num": "003",
+    "num": "005",
     "title": "Agenda Digital",
     "desc": "Aplicação desktop para gerenciamento de agendamentos com controle de conflitos de horário e cálculo automático de faturamento. Focada em uso local, oferece uma interface gráfica dinâmica e persistência em SQLite para operações completas de CRUD.",
     "tags": [
@@ -88,7 +130,7 @@
   },
   {
   "id": "passworld",
-  "num": "004",
+  "num": "006",
   "title": "PassWorld",
   "desc": "Gerenciador de senhas local com criptografia moderna, autenticação baseada em sessão e versão desktop nativa. Em vez de banco de dados tradicional, armazena as credenciais em um arquivo .vault criptografado, protegido por uma senha mestra que nunca é salva em disco.",
   "tags": [

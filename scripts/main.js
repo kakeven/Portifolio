@@ -227,9 +227,14 @@ function renderFeatures(features) {
 }
 
 function renderActions({ github, demo }) {
-  const githubBtn = `<a href="${github}" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>`;
-  if (!demo) return githubBtn;
-  return `<a href="${demo}" target="_blank" class="modal-btn modal-btn-primary">Ver demo →</a>${githubBtn}`;
+  const actions = [];
+  if (demo) {
+    actions.push(`<a href="${demo}" target="_blank" rel="noopener noreferrer" class="modal-btn modal-btn-primary">Ver demo →</a>`);
+  }
+  if (github) {
+    actions.push(`<a href="${github}" target="_blank" rel="noopener noreferrer" class="modal-btn modal-btn-ghost">GitHub ↗</a>`);
+  }
+  return actions.join('');
 }
 
 // ── Modal control
@@ -252,6 +257,10 @@ function openModal(key) {
 
   modalTags.innerHTML = renderTags(p.tags);
   modalFeatures.innerHTML = renderFeatures(p.features);
+  modalTags.hidden = p.tags.length === 0;
+  modalTags.previousElementSibling.hidden = modalTags.hidden;
+  modalFeatures.hidden = p.features.length === 0;
+  modalFeatures.previousElementSibling.hidden = modalFeatures.hidden;
   modalActions.innerHTML = renderActions(p);
 
   overlay.classList.add('open');
